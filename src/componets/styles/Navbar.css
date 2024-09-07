@@ -1,0 +1,138 @@
+/* src/styles/Navbar.css */
+
+/* Navbar container */
+.navbar {
+  height: 60px; /* Adjust height as needed */
+  background-color: rgb(30, 30, 201); /* Navbar background color */
+  display: flex;
+  justify-content: space-between; /* Distributes space between left and right sections */
+  align-items: center;
+  padding: 0 20px; /* Padding for content */
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Align with the top of the viewport */
+  left: 0vw; /* Align to the right of the sidebar */
+ /* width: calc(100% - 15vw);  Full width minus the sidebar width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+
+  overflow: hidden; /* Hide any overflow content */
+}
+
+/* Navbar-left styling */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  flex: 1; /* Allow this section to take up available space */
+}
+
+/* Menu icon styling */
+.menu-icon {
+  font-size: 1.5rem; /* Adjust as needed */
+  margin-right: 10px; /* Space between the menu icon and search box */
+  color: #dc1f1f; /* Ensure the icon color contrasts with the background */
+}
+
+/* Search container styling */
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #a11818;
+  border-radius: 20px; /* Fully rounded corners */
+  padding: 5px 10px;
+  max-width: 300px; /* Limit the maximum width */
+  flex: 1; /* Allow it to take up remaining space */
+}
+
+/* Search input styling */
+.search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 5px;
+  border-radius: 20px; /* Match rounded corners of container */
+  width: 100%; /* Take up remaining space in the container */
+}
+
+/* Search icon styling */
+.search-icon {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+/* Navbar-right styling */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Language select styling */
+.language-select {
+  margin-right: 10px;
+}
+
+/* Admin label styling */
+.admin-label {
+  font-weight: bold;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 767px) {
+  .navbar {
+    left: 0; /* Full width on small screens */
+    width: 100%; /* Full width */
+  }
+
+  .navbar-left, .navbar-right {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .menu-icon {
+    font-size: 1.2rem; /* Reduce size for smaller screens */
+  }
+
+  .search-container {
+    width: 100%; /* Full width for search box */
+    max-width: none; /* Remove max-width restriction */
+    margin-top: 10px; /* Space above search container */
+  }
+
+  .navbar-right {
+    margin-top: 10px; /* Space above right section */
+    padding-left: 10%;
+  }
+}
+
+/* Responsive styles for tablets and smaller screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    left: 15vw; /* Keep left position for tablets */
+    width: calc(100% - 15vw); /* Adjust width to avoid overlap with sidebar */
+  }
+
+  .search-container {
+    max-width: 250px; /* Adjust max-width for tablets */
+  }
+}
+
+
+
+
+
+.admin-button {
+  background-color: #007bff; /* Blue background */
+  color: rgb(215, 47, 47);              /* White text */
+  border: none;              /* Remove default border */
+  width: 40px;               /* Fixed width to make it round */
+  height: 40px;              /* Fixed height to match width */
+  border-radius: 50%;        /* Full round shape */
+  cursor: pointer;           /* Pointer cursor on hover */
+  font-size: 16px;           /* Font size for the text */
+  display: flex;             /* Flexbox for centering text */
+  align-items: center;       /* Vertically center the text */
+  justify-content: center;   /* Horizontally center the text */
+}
+
+.admin-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+

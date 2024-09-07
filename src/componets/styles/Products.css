@@ -1,0 +1,165 @@
+/* Banner Content Section */
+.banner-content {
+  background-color: #007bff; /* Blue background color */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border: 5px solid #0056b3; /* Darker blue border color */
+  border-radius: 10px; /* Rounded corners */
+  margin: 20px; /* Adds space around the banner */
+  background-size: cover; 
+  background-position: center; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+}
+
+.banner-text h2 {
+  margin: 10px 0;
+  font-size: 32px;
+}
+
+.banner-text p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.get-started-button {
+  background-color: white; /* White button background */
+  color: #007bff; /* Blue button text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: #f3f3f3; /* Light gray on hover */
+}
+
+/* Banner Frame */
+.banner-frame {
+  border: 2px solid #007bff; /* Blue frame border */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff; /* White background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  text-align: center; /* Center content within the frame */
+}
+
+/* Horizontal Layout */
+.horizontal-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 22px;
+  padding-right: 20%;
+}
+
+/* Deals and Products Sections */
+.deals-details, .products-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Deals Details Section */
+.deals-details {
+  margin-top: 40px;
+  margin-left: auto; /* Align to the right side */
+  width: 90%; /* Adjust width as needed */
+  padding-left: 6%; /* Adjust padding as needed */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow with more depth */
+}
+
+/* Products Container */
+.products-container {
+  margin-top: 40px;
+  margin-left: auto; /* Align to the right side */
+  width: calc(100% - 60px); /* Adjust width, considering the padding */
+  padding-right: 30px; /* Add padding on the right side */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow with more depth */
+}
+
+/* Products Grid */
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between product cards */
+  justify-content: flex-start; /* Align products to the left within the container */
+}
+
+.product-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff; /* White card background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.product-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.heart-icon {
+  color: red;
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.heart-icon:hover {
+  transform: scale(1.2); /* Enlarge heart icon on hover */
+}
+
+/* Products Container */
+.products-container {
+  margin-top: 40px;
+  margin-left: auto; /* Align to the right side */
+  width: calc(100% - 60px); /* Adjust width, considering the padding */
+  padding-right: 7px; /* Add padding on the right side */
+}
+
+/* Products Grid */
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between product cards */
+  justify-content: flex-start; /* Align products to the left within the container */
+}
+
+
+/* Products Container */
+.products-container {
+  margin: 40px auto; /* Center horizontally with automatic margins */
+  width: 90%; /* Adjust width as needed to fit the parent container */
+  max-width: 1200px; /* Optional: Limit the maximum width for larger screens */
+  padding-right: 30px; /* Add padding on the right side */
+  background-color: #fff; /* Ensure background color is white for consistency */
+  border-radius: 8px; /* Optional: Rounded corners for the container */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Products Grid */
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between product cards */
+  justify-content: center; /* Center products within the container */
+}

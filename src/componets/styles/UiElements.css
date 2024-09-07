@@ -1,0 +1,31 @@
+/* Container for chart groups */
+.chart-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Grouping charts together and aligning them */
+  .chart-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Individual chart styling */
+  .chart {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Filter bar styling */
+  .filter {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  

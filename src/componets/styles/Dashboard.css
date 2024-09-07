@@ -1,0 +1,231 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Dashboard container */
+.dashboard-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+/* Dashboard heading */
+.dashboard-heading h1 {
+  padding: 30px 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #dee2e6;
+}
+
+/* Cards container */
+.cards-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Card styles */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card header */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Card body */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+/* Value styling */
+.value {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Progress styling */
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+/* Sales Details section */
+.sales-details {
+  margin-top: 40px;
+}
+
+/* Sales title */
+.sales-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #495057;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 10px;
+}
+
+/* Deals Details section */
+.deals-details {
+  margin-top: 40px;
+  width: 100%;
+  padding-right: 10%;
+}
+
+/* Deals title */
+.deals-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #495057;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 10px;
+}
+
+/* Deals table styles */
+.deals-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+/* Header row */
+.header {
+  background-color: #e9ecef;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  font-weight: bold;
+  padding: 15px;
+  border-bottom: 2px solid #dee2e6;
+  color: #343a40;
+}
+
+/* Table row */
+.row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 15px;
+  border-bottom: 1px solid #dee2e6;
+  color: #495057;
+  transition: background-color 0.3s ease;
+}
+
+.row:hover {
+  background-color: #f1f3f5;
+}
+
+/* Responsive images */
+.product-name img {
+  width: 60px;
+  height: auto;
+  margin-right: 15px;
+  border-radius: 8px;
+}
+
+/* Status button */
+.status button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.3s ease;
+}
+
+.status button.delivered {
+  background-color: #28a745;
+}
+
+.status button:hover {
+  background-color: #218838;
+}
+
+
+/* Dashboard container */
+.dashboard-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+/* Cards container */
+.cards-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap; /* Ensure sections stay in one row */
+  justify-content: space-between;
+}
+
+/* Card styles */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  flex: 1;
+  max-width: 23%; /* Ensure 4 cards fit in one row */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Sales Details section */
+.sales-details {
+  margin-top: 40px;
+  margin-right: auto; /* Align to the left side */
+  width: 100%; /* Adjust width as needed */
+  padding-left: 0; /* Remove unnecessary padding on the left */
+}
+
+/* Deals Details section */
+.deals-details {
+  margin-top: 50px;
+  margin-right: auto; /* Align to the left side */
+  width: 90%; /* Adjust width as needed */
+  padding-left: 0; /* Remove unnecessary padding on the left */
+}

@@ -1,0 +1,93 @@
+/* Styling for the invoice container */
+.invoice-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title styling */
+  .invoice-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 30px;
+  }
+  
+  /* Invoice info section */
+  .invoice-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+  
+  .invoice-info div {
+    max-width: 30%;
+  }
+  
+  .invoice-info strong {
+    color: #333;
+  }
+  
+  .invoice-info p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  /* Table styling */
+  .invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .invoice-table th,
+  .invoice-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .invoice-table th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .invoice-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Total section styling */
+  .invoice-total {
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-right: 15px;
+    color: #333;
+  }
+  
+  /* Button styling */
+  .invoice-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .invoice-button:hover {
+    background-color: #0056b3;
+  }
+  

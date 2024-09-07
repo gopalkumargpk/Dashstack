@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+/* src/styles/App.css */
+
+.app-container {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar {
+  width: 14vw; /* Adjust as needed */
+  position: fixed;
+  height: 100vh;
+  background-color: #3B3F52; /* Sidebar background color */
+  /* Other sidebar styles */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content-container {
+  margin-left: 15vw; /* Space for the sidebar */
+  width: calc(100% - 15vw); /* Full width minus the sidebar width */
   display: flex;
   flex-direction: column;
+  height: 100vh;
+}
+
+.navbar {
+  height: 60px; /* Adjust height as needed */
+  background-color: #3B3F52;/* Navbar background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for depth */
+  display: flex;
+  justify-content: space-between; /* Distributes space between left and right sections */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 20px; /* Padding for content */
+  position: relative;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-left {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-icon {
+  font-size: 1.5rem;
+  margin-right: 10px; /* Space between the menu icon and search box */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 20px; /* Fully rounded corners */
+  padding: 5px 10px;
+  width: 300px; /* Fixed width or adjust as needed */
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 5px;
+  border-radius: 20px; /* Match rounded corners of container */
+  width: 100%; /* Take up remaining space in the container */
+}
+
+.search-icon {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.language-select {
+  margin-right: 10px;
+}
+
+.admin-label {
+  font-weight: bold;
 }
